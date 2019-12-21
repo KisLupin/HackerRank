@@ -1,4 +1,4 @@
-//import java.io.*;
+package hacker_rank;//import java.io.*;
 //import java.util.*;
 //
 //public class Solution {

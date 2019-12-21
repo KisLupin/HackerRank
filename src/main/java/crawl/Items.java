@@ -1,8 +1,12 @@
-public class TopLevelComment {
+package crawl;
+
+import java.util.List;
+
+public class Items {
     private String kind;
     private String etag;
     private String id;
-    private Snippet2 snippet;
+    private Snippet snippet;
 
     public String getKind() {
         return kind;
@@ -28,11 +32,11 @@ public class TopLevelComment {
         this.id = id;
     }
 
-    public Snippet2 getSnippet() {
+    public Snippet getSnippet() {
         return snippet;
     }
 
-    public void setSnippet(Snippet2 snippet) {
+    public void setSnippet(Snippet snippet) {
         this.snippet = snippet;
     }
 }

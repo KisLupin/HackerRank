@@ -1,10 +1,12 @@
-import java.util.List;
+package crawl;
 
-public class Items {
+import crawl.Snippet2;
+
+public class TopLevelComment {
     private String kind;
     private String etag;
     private String id;
-    private Snippet snippet;
+    private Snippet2 snippet;
 
     public String getKind() {
         return kind;
@@ -30,11 +32,11 @@ public class Items {
         this.id = id;
     }
 
-    public Snippet getSnippet() {
+    public Snippet2 getSnippet() {
         return snippet;
     }
 
-    public void setSnippet(Snippet snippet) {
+    public void setSnippet(Snippet2 snippet) {
         this.snippet = snippet;
     }
 }

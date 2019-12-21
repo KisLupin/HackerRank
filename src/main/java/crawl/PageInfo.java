@@ -1,3 +1,5 @@
+package crawl;
+
 public class PageInfo {
     private int totalResults;
     private int resultsPerPage;

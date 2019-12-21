@@ -1,6 +1,8 @@
+package crawl;
+
 import java.util.List;
 
-public class JsonObject {
+public class ObjectCrawl {
     private String kind;
     private String etag;
     private String nextPageToken;

@@ -1,3 +1,7 @@
+package crawl;
+
+import crawl.AuthorChannelId;
+
 public class Snippet2 {
     private String authorDisplayName;
     private String authorProfileImageUrl;

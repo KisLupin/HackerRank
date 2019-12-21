@@ -1,3 +1,5 @@
+package hacker_rank;
+
 import java.security.MessageDigest;
 import java.util.*;
 
@@ -5,15 +7,30 @@ public class HackerRank {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         while (sc.hasNext()) {
-            String input=sc.next();
-            //Complete the code
+            String input = sc.next();
+            Stack<Character> stack = new Stack();
+            for (int i = 0; i < input.length(); i++) {
+                if (stack.isEmpty()){
+                    stack.push(input.charAt(i));
+                }else if (stack.peek() == '{'){
+                    if (input.charAt(i) == '}'){
+                        stack.pop();
+                    }else stack.push(input.charAt(i));
+                }else if (stack.peek() == '('){
+                    if (input.charAt(i) == ')'){
+                        stack.pop();
+                    }else stack.push(input.charAt(i));
+                }else if (stack.peek() == '['){
+                    if (input.charAt(i) == ']'){
+                        stack.pop();
+                    }else stack.push(input.charAt(i));
+                }
+            }
+            if (stack.empty()){
+                System.out.println("true");
+            }else System.out.println("false");
         }
-
-
-
-
     }
     static int[] climbingLeaderboard(int[] scores, int[] alice) {
         int[] result = new int[alice.length];
@@ -55,9 +72,6 @@ public class HackerRank {
         int row = matrix.size();
         int col = matrix.get(0).size();
         List<Integer> row1 = new ArrayList<Integer>();
-//        int maxStepRow = row - 2;
-//        int maxStepCol = col - 2;
-//        int temp = 0;
         for (int i = 0; i < row; i++) {    // row
             for (int j = 0; j < col; j++) {   // column
                 while (r == 0) {

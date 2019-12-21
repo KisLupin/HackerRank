@@ -1,3 +1,5 @@
+package crawl;
+
 public class AuthorChannelId {
     private String value;
 

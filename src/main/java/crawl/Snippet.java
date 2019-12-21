@@ -1,3 +1,5 @@
+package crawl;
+
 public class Snippet {
     private String channelId;
     private String videoId;

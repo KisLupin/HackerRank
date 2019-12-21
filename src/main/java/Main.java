@@ -1,6 +1,8 @@
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
+import crawl.ObjectCrawl;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -18,7 +20,7 @@ public class Main {
         JsonParser jp = new JsonParser(); //from gson
         JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
         Gson gson = new Gson();
-        JsonObject jsonObject = gson.fromJson(root, JsonObject.class);
-        System.out.println(jsonObject);
+        ObjectCrawl objectCrawl = gson.fromJson(root, ObjectCrawl.class);
+        System.out.println(objectCrawl);
     }
 }
