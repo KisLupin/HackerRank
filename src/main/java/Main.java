@@ -1,11 +1,16 @@
-import java.io.IOException;
-import java.math.BigInteger;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
+import dowload_img.Download;
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.graphics.state.PDTextState;
+import org.apache.pdfbox.text.PDFTextStripper;
+import org.apache.pdfbox.text.PDFTextStripperByArea;
+
+import java.io.*;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 //        String sURL = "https://www.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&allThreadsRelatedToChannelId=UC_x5XG1OV2P6uZZ5FSM9Ttw&key=AIzaSyCBZibQeqvVwkBkfEprmfHBOHNU-4QSn70&fbclid=IwAR3CJb4HApTcqV1BptqDyl48LA0_FTCUtcz0aMq4XogAMCGT-j_jWLmcK_w"; //just a string
 //        // Connect to the URL using java's native library
 //        URL url = new URL(sURL);
@@ -20,5 +25,6 @@ public class Main {
 //        HackerRank hackerRank = new HackerRank();
 //        System.out.println(hackerRank.factorial(4));
 //        System.out.println(Integer.toBinaryString(524275));
+
     }
 }
